@@ -25,7 +25,7 @@ Fonts:
 
 /* Set up the main font and background color for the whole page */
 body {
-  background-color: #f4f8fb; /* Soft light blue for a fresh look */
+  background-color: #fffaf0; /* Soft light blue for a fresh look */
   font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -34,9 +34,9 @@ body {
 
 /* Add a slight shadow and rounded corners to each section for depth */
 section {
-  background: #fff; /* White background for sections */
+  background: #ffffff; /* White background for sections */
   border-radius: 12px; /* Rounded corners */
-  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.07); /* Soft blue shadow */
+  box-shadow: 0 2px 8px rgba(6, 29, 106, 0.889); /* Soft blue shadow */
   margin: 24px 10px; /* Space between sections */
   padding: 24px 16px;
 }
@@ -45,11 +45,11 @@ section {
 .hero {
   position: relative; /* Needed for overlay */
   /* Set a background image that covers the whole section */
-  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80');
+  background-image: url(https://images.pexels.com/photos/14325728/pexels-photo-14325728.jpeg?_gl=1*1jtkl3o*_ga*MTQ2MDU3NjI2LjE3NTcxODY0MjU.*_ga_8JE65Q40S6*czE3NTcxODY0MjUkbzEkZzEkdDE3NTcxODc2OTIkajYwJGwwJGgw);
   background-size: cover;      /* Make the image cover the whole area */
   background-position: center; /* Center the image */
   background-repeat: no-repeat;
-  color: #fff;                 /* White text for contrast */
+  color: rgb(255, 255, 255);                 /* White text for contrast */
   text-align: center;          /* Center the text */
   padding: 60px 20px;          /* Add space above and below */
   border-radius: 0 0 16px 16px; /* Only round bottom corners */
@@ -57,16 +57,16 @@ section {
   /* Add a dark overlay for better text readability */
   /* This uses a simple linear-gradient overlay */
   background-blend-mode: darken;
-  background-color: rgba(46, 157, 247, 0.45); /* Blue overlay */
+  background-color: rgba(242, 222, 110, 0.45); /* Blue overlay */
 }
 
 /* Make the headline bold and modern */
 .hero h1 {
-  font-size: 2.5em;
+  font-size: 1.5em;
   font-weight: bold;
   letter-spacing: 1px;
   margin-bottom: 15px;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.15); /* Soft shadow for readability */
+  text-shadow: 3 2px 8px rgba(0,0,0,0.15); /* Soft shadow for readability */
 }
 
 /* Style the subheadline */
@@ -77,26 +77,46 @@ section {
 }
 
 /* Story Section Styles */
-.story {
-  background-color: #8BD1CB; /* Secondary Light Blue */
-  color: #222;
-  text-align: center;
-  padding: 30px 20px;
+.story-image {
+  display: block;         /* Makes it behave like a block element */
+  margin: 20px auto;      /* Centers it horizontally */
+  max-width: 200px;       /* Limit the size so it doesn’t get too big */
+  height: auto;           /* Keep aspect ratio */
 }
 
+  
+
 /* Add accent color to section headings */
+
 h2 {
-  color: #2E9DF7; /* Primary blue */
+  
+  color: #003366; /* Primary blue */
+  font-weight: bold
   margin-top: 0;
-  font-weight: bold;
+  
 }
+
+/* Make the background of the "Make A Real Impact" section yellow */
+.impact-story {
+  background-color: #FFC907; /* Primary Yellow */
+  
+}
+/* Center the heading in the impact story section */
+.impact-story h2 {
+  text-align: center; /* This centers the heading */
+}
+
 
 /* Call-to-Action Section Styles */
 .call-to-action {
-  background-color: #FFC907; /* Primary Yellow */
-  color: #222;
+  background-color: #003366; /* Primary Yellow */
+  color: #FFC907;
   text-align: center;
   padding: 30px 20px;
+}
+/* Change the color of the "Make a Difference" heading */
+.call-to-action h2 {
+  color: #FFC907; /* You can use any color you like, for example #222 for dark gray */
 }
 
 /* Style the impact story image */
@@ -111,8 +131,8 @@ h2 {
 /* Donate Button Styles */
 .donate-button {
   display: inline-block;
-  background-color: #4FCB53; /* Green */
-  color: #fff;
+  background-color: #FFC907; /* Green */
+  color: #003366;
   padding: 14px 32px;
   text-decoration: none;
   border-radius: 6px;
@@ -127,7 +147,7 @@ h2 {
 
 /* Change button color when hovered */
 .donate-button:hover {
-  background-color: #159A48; /* Dark Green */
+  background-color: #dfca0f; /* Dark Green */
   transform: translateY(-2px) scale(1.04); /* Slight lift */
 }
 
@@ -193,6 +213,6 @@ section {
   }
 
   .impact-image {
-    width: 300px;
+    width: 800px;
   }
 }
